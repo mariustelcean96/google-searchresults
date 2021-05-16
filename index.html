@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+    <head>
+        <title>build this page - Căutare Google</title>
+        <link rel="shortcut icon" href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+/*Icons */
+.material-icons {
+    fwidth: 20px;
+    height: auto;
+    opacity: 0.7;
+    
+}
+
+/* Header */
+ul {
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    border-bottom: 1px solid grey;
+    box-shadow: 2px 2px 2px grey;
+    
+}
+li {
+    float: left;
+}
+li a:visited, a:link {
+    text-decoration: none;
+    color: rgb(83, 78, 78);
+    padding: 5px;
+}
+header a:hover {
+    text-decoration: underline;
+}
+.material-icons {
+    font-size: 24px;
+}
+.header-profile-pic {
+    border-radius: 50%;
+    display: block;
+    width: 25px;
+    height: auto;
+}
+[type='text'] {
+    color:Red;
+    border: 2px 2px 2px;
+    box-shadow: grey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.vl {
+    border-left: 1px solid grey;
+    height: 10px;
+    display: inline;
+}
+
+.ul2 a:hover {
+    text-decoration: none;
+}
+.instruments-hover a:hover {
+    border: 1px solid grey;
+    background-color: lightgrey;
+}
+/* Body */
+.container {
+    display: grid;
+    grid-template-areas: "left right";
+}
+.left {
+    min-width: 400px;
+    max-width: 700px;
+    grid-area: left;
+    margin: 0 auto;
+}
+.container-item-left {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.subcontainer-1 {
+    background-color: lightcoral;
+}
+.subcontainer-2 {
+    background-color: lightsalmon;
+}
+.subcontainer-3 {
+    background-color: lightseagreen;
+}
+.subcontainer-4 {
+    background-color: lightskyblue;
+}
+.right {
+    grid-area: right;
+    margin: 10px auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    min-height: auto;
+    min-width: auto;
+}
+.ul-others-searched-for {
+    list-style-type: none;
+}
+.others-searched-for-box {
+    border: 1px solid lightgray;
+}
+
+        </style>
+    </head>
+<body>
+    <header>
+
+    </header>
+<main>
+    <!--Google logo, search bar and panel-->
+    <ul>
+        <li><img style="width: 100px; height: auto; margin-right: 20px;"alt="Google's modern logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></li>
+        <li><input id="search-box" name="search-box" type="text"></input></li>
+        <li><span class="material-icons">close</span></li>
+        <li><div class="vl"></div></li>
+        <li><span class="material-icons">keyboard</span></li>
+        <li><span style="color:blue;" class="material-icons">search</span></li>
+        <!--For some reason yet unknown to me, the order is reversed. Perhaps something with the float property? >.< -->
+        <li style="float:right"><img class="header-profile-pic" title="Cont Google Telcean Marius marius.telcean96@gmail.com" alt="Marius Telcean's profile picture, taken during a festival that took place in Cluj-Napoca's Central Park." src="profile-Pic.png"></li>
+        <li style="float:right"><a href="#" title="Aplicaţii Google"><span class="material-icons">apps</span></a></li>
+    </ul>
+    <ul style="position: relative;"class="ul2">
+        <li style="margin-left: 50px; border-bottom: 6px solid blue;"><a href="#"><span class="material-icons">search</span>Toate</a></li>
+        <li><a href="#"><span class="material-icons">location_on</span>Hărţi</a></li>
+        <li><a href="#"><span class="material-icons">article</span>Ştiri</a></li>
+        <li><a href="#"><span class="material-icons">smart_display</span>Videoclipuri</a></li>
+        <li><a href="#"><span class="material-icons">image</span>Imagini</a></li>
+        <li><a href="#"><span class="material-icons">more_vert</span>Mai multe</a></li>
+        <li><a href="#">Setări</a></li>
+        <li class="instruments-hover"><a href="#">Instrumente</a></li>
+        <li style="float: right;"><a href="#">Căutare sigură activată</a></li>
+            </ul>
+    <!--List of search results-->
+    <div class="container">
+        <div class="left">
+            <p>Aproximativ 114.000.000 rezultate (0,59 secunde)</p> 
+        <div class="container-item-left">
+            <div class="subcontainer-1"><strong>Anunț · </strong><a href="https://www.thebest10websitebuilders.com/">https://www.thebest10websitebuilders.com/</a><span class="material-icons">arrow_drop_down</span></div>
+            <div class="subcontainer-2"><a href="#">Website Builders (Recommended) - Compare Top Website...</a></div>
+            <div class="subcontainer-3">It's Easy and Free. Compare the Best <strong>Website</strong> Builders. The #1 Website <strong>Website</strong>'s Reviews!</div>
+            <div class="subcontainer-4"><a href="#">Top Site Builders Reviews</a> · <a href="#">Online Store Builders</a>‎ · ‎<a href="#">The #1 Website Builder</a></div>
+        </div>
+        <div class="container-item-left">
+            <div class="subcontainer-1"><strong>Anunț · </strong><a href="www.best10ecommercesitebuilders.com/">https://www.best10ecommercesitebuilders.com/</a><span class="material-icons">arrow_drop_down</span></div>
+            <div class="subcontainer-2"><a href="#">Website Builders (Recommended) - Ultimate Website Builder...</a></div>
+            <div class="subcontainer-3">It's Easy and Free. Compare the Best <strong>Website</strong> Builders. The #1 Website <strong>Website</strong>'s Reviews! It's Easy. Compare the Best <strong>Website</strong> Builders and Choose Yours. Make a Free <strong>Website</strong>...</div>
+            <div class="subcontainer-4"><a href="#">#1 Website Builder</a> · <a href="#">‎Business Website</a>‎ · ‎<a href="#">‎New Reviews Released</a> · <a href="#">Feature Comparison</a></div>
+        </div>
+        <div class="others-searched-for-box">
+            <ul>
+            <li style="float:left;">Alţii au căutat şi</li>
+            <li style="float:right;"><span class="material-icons">close</span></li><br>
+            <li style="float:right;"><a href="#">How to create a website for free</a></li>
+            <li style="float:none; "><a href="#">How to build a website</a></li>
+            <li style="float:right;"><a href="#">How to create a website HTML</a></li>
+            <li style="float:none;"><a href="#">How to build a website from scratch</a></li>
+            <li style="float:none;"><a href="#">How to make a professional website</a></li>
+        </ul>
+        <div class="container-item-left">
+            <div class="subcontainer-1"><a href="#">https://christine-27.github.io/ › ... </a><span class="material-icons">arrow_drop_down</span><a href="#">Traducerea acestei pagini</a></div>
+            <div class="subcontainer-2"><a href="#"><strong>build this webpage</strong> - GitHub Pages</a></div>
+            <div class="subcontainer-3">With zero coding experience, artist building 180 webpages . ... days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage.</div>
+        </div>
+
+         
+        
+        
+
+        </div>
+
+        </div>
+        <div class="right">
+            <p>Alţii caută şi</p>
+            <ul class="ul-others-searched-for">
+                <li style="float:none"><span class="material-icons">search</span>How to build a website</li>
+                <li style="float:none"><span class="material-icons">search</span>How to build a website from scratch</li>
+                <li style="float:none"><span class="material-icons">search</span>How to create a website HTML</li>
+                <li style="float:none"><span class="material-icons">search</span>How to create a website for free</li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+</body>
+</header>
+</html>

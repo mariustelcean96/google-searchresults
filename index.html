@@ -6,13 +6,25 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <style>
+/* Main */
+body {
+    font-family: arial,sans-serif;}
+
+
 /*Icons */
 .material-icons {
-    width: 20px;
-    height: auto;
+    margin: 5px 1px;
     opacity: 0.7;
 }
-
+.mat-icons-big {
+    font-size: 40px;
+}
+.material-icons {
+    
+}
+.material-icons-menu-bar {
+    font-size: 18px;
+}
 /* Header */
 .ul-for-navigation-bar {
     background-color: white;
@@ -35,6 +47,8 @@
     border: 1px solid lightgrey;
     box-shadow: 0 0 1px lightgray;
     height: 45px;
+    margin: 12px;
+    
     
     
 }
@@ -58,14 +72,17 @@ li a:visited, a:link {
     padding: 5px;
 }
 
-.material-icons {
-    font-size: 24px;
+.li-nav-menu-left-right-bottom-margins {
+    margin-right: 10px;
+    
 }
+
 .header-profile-pic {
     border-radius: 50%;
-    display: block;
+    display: inline-block;
     width: 25px;
     height: auto;
+    
 }
 [type='text'] {
     border: 0;
@@ -183,52 +200,63 @@ li a:visited, a:link {
     margin: 10px;
 }
 .goooogle-container {
-    background-color: aqua;
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 70px;
     justify-content: center;
     
 }
 .goooogle-subcontainer {
-    background-color: burlywood;
-    max-width: 100px;
     display: grid;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 40px 25px;
     align-items: center;
     justify-items: center;
+    
 }
 .goooogle-subcontainer-top {
-background: chocolate;
+
+line-height: 1px;
 
 }
+
 .goooogle-subcontainer-bottom {
-    background-color: chartreuse;
+  
+  line-height: 11px; 
 }
 .p-gooooogle-bottom {
     font-size: 14px;
+    color: blue;
 }
+.p-top-goooogle {
+    font-size: 34px;
+}
+.p-goooogle-G-gle {
+    letter-spacing: 0px;
+    margin-top: 45px;
+}
+
 /* Footer */
 .ul-footer-1 {
-    margin: 0px;
-    list-style-type: none;
     
 }
 .ul-footer-2 {
-    margin: 0px;
-    list-style-type: none;
+    
 }
+
 .ul-footer-1, .ul-footer-2 {
     background-color:rgb(165, 165, 165);
     overflow: hidden;
-            
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+    list-style-type: none;
 }
 .ul-footer-1 li, .ul-footer-2 li {
-    margin: 15px;
+    margin: 10px;
 }
 
 footer a:link, a:visited {
     padding: 5px;
-    margin: 5px 10px;
+    margin: 5px 0px;
     text-decoration: none;
     color: rgb(83, 78, 78);
         }
@@ -239,8 +267,16 @@ footer a:hover, a:active {
 hr {
     padding: 0px;
     margin: 0px;
-    opacity: 0.15;
+    opacity: 0.8;
+    width: 100%;
         } 
+.dot {
+            background-color: grey;
+            border-radius: 50%;
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+        }
         </style>
     </head>
 <body>
@@ -250,27 +286,27 @@ hr {
 <main>
     <!--Google logo, search bar and panel-->
     <ul class="ul-for-navigation-bar">
-        <li><img style="width: 100px; height: auto; margin-right: 20px;"alt="Google's modern logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></li>
+        <li><img style="width: 100px; height: auto; margin-right: 20px; margin-top: 13px; margin-left: 8px;"alt="Google's modern logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></li>
         <div class="container-header">
             <li><input id="search-box" name="search-box" type="text"></input></li>
-            <li><span class="material-icons">close</span></li>
+            <li><span style="font-size: 19px;" class="material-icons">close</span></li>
             <li><div class="vl"></div></li>
-            <li><span class="material-icons">keyboard</span></li>
-            <li><span style="color:blue;" class="material-icons">search</span></li>
+            <li><span style="font-size: 19px;" class="material-icons">keyboard</span></li>
+            <li><span style="font-size: 19px; color:blue;" class="material-icons">search</span></li>
         </div>
         <!--For some reason yet unknown to me, the order is reversed. Perhaps something with the float property? >.< -->
         <li style="float:right"><img class="header-profile-pic" title="Cont Google Telcean Marius marius.telcean96@gmail.com" alt="Marius Telcean's profile picture, taken during a festival that took place in Cluj-Napoca's Central Park." src="profile-Pic.png"></li>
-        <li style="float:right"><a href="#" title="Aplicaţii Google"><span class="material-icons">apps</span></a></li>
+        <li style="float:right"><a href="#" title="Aplicaţii Google"><span style="font-size: 20px;" class="material-icons">apps</span></a></li>
     </ul>
     <ul class="ul-for-navigation-menu">
-        <li style="margin-left: 50px; border-bottom: 6px solid blue;"><a href="#"><span class="material-icons">search</span>Toate</a></li>
-        <li><a href="#"><span class="material-icons">location_on</span>Hărţi</a></li>
-        <li><a href="#"><span class="material-icons">article</span>Ştiri</a></li>
-        <li><a href="#"><span class="material-icons">smart_display</span>Videoclipuri</a></li>
-        <li><a href="#"><span class="material-icons">image</span>Imagini</a></li>
-        <li><a href="#"><span class="material-icons">more_vert</span>Mai multe</a></li>
-        <li><a href="#">Setări</a></li>
-        <li class="instruments-hover"><a href="#">Instrumente</a></li>
+        <li class="li-nav-menu-left-right-bottom-margins" style="margin-left: 83px; border-bottom: 3px solid blue;"><a href="#"><span class="material-icons material-icons-menu-bar">search</span>Toate</a></li>
+        <li class="li-nav-menu-left-right-bottom-margins"><a href="#"><span class="material-icons material-icons-menu-bar">location_on</span>Hărţi</a></li>
+        <li class="li-nav-menu-left-right-bottom-margins"><a href="#"><span style="font-size: 18px;" class="material-icons">article</span>Ştiri</a></li>
+        <li class="li-nav-menu-left-right-bottom-margins"><a href="#"><span style="font-size: 18px;" class="material-icons">smart_display</span>Videoclipuri</a></li>
+        <li class="li-nav-menu-left-right-bottom-margins"><a href="#"><span style="font-size: 18px;" class="material-icons">image</span>Imagini</a></li>
+        <li class="li-nav-menu-left-right-bottom-margins"><a href="#"><span style="font-size: 18px;" class="material-icons">more_vert</span>Mai multe</a></li>
+        <li class="li-nav-menu-left-right-bottom-margins" style="margin-top: 7px;"><a href="#">Setări</a></li>
+        <li class="li-nav-menu-left-right-bottom-margins" style="margin-top: 7px;" class="instruments-hover"><a href="#">Instrumente</a></li>
         <li style="float: right;"><a href="#">Căutare sigură activată</a></li>
             </ul>
     <!--List of search results-->
@@ -279,13 +315,13 @@ hr {
         <div class="left">
             <p>Aproximativ 114.000.000 rezultate (0,59 secunde)</p> 
         <div class="container-item-left not-visited-links">
-            <a href="https://www.thebest10websitebuilders.com/"><div class="subcontainer-1"><strong>Anunț · </strong>https://www.thebest10websitebuilders.com/<span class="material-icons">arrow_drop_down</span></div></a>
+            <a style="color: black;" href="https://www.thebest10websitebuilders.com/"><div class="subcontainer-1"><strong>Anunț · </strong>https://www.thebest10websitebuilders.com/<span class="material-icons">arrow_drop_down</span></div></a>
             <div class="subcontainer-2"><a href="#">Website Builders (Recommended) - Compare Top Website...</a></div>
             <div class="subcontainer-3">It's Easy and Free. Compare the Best <strong>Website</strong> Builders. The #1 Website <strong>Website</strong>'s Reviews!</div>
             <div class="subcontainer-4"><a href="#">Top Site Builders Reviews</a> · <a href="#">Online Store Builders</a>‎ · ‎<a href="#">The #1 Website Builder</a></div>
         </div>
-        <div class="container-item-left">
-            <a href="www.best10ecommercesitebuilders.com/"><div class="subcontainer-1"><strong>Anunț · </strong>https://www.best10ecommercesitebuilders.com/<span class="material-icons">arrow_drop_down</span></div></a>
+        <div class="container-item-left not-visited-links">
+            <a style="color: black;" href="www.best10ecommercesitebuilders.com/"><div class="subcontainer-1"><strong>Anunț · </strong>https://www.best10ecommercesitebuilders.com/<span class="material-icons">arrow_drop_down</span></div></a>
             <div class="subcontainer-2"><a href="#">Website Builders (Recommended) - Ultimate Website Builder...</a></div>
             <div class="subcontainer-3">It's Easy and Free. Compare the Best <strong>Website</strong> Builders. The #1 Website <strong>Website</strong>'s Reviews! It's Easy. Compare the Best <strong>Website</strong> Builders and Choose Yours. Make a Free <strong>Website</strong>...</div>
             <div class="subcontainer-4"><a href="#">#1 Website Builder</a> · <a href="#">‎Business Website</a>‎ · ‎<a href="#">‎New Reviews Released</a> · <a href="#">Feature Comparison</a></div>
@@ -302,8 +338,8 @@ hr {
             </ul>
         </div>
 
-        <div class="container-item-left">
-            <div class="subcontainer-1"><a href="#">https://christine-27.github.io/ › ... </a><span class="material-icons">arrow_drop_down</span><a href="#">Traducerea acestei pagini</a></div>
+        <div class="container-item-left not-visited-links">
+            <div class="subcontainer-1"><a style="color: black;" href="#">https://christine-27.github.io/ › ... </a><span class="material-icons">arrow_drop_down</span><a style="color: blue;" href="#">Traducerea acestei pagini</a></div>
             <div class="subcontainer-2"><a href="#">build this webpage - GitHub Pages</a></div>
             <div class="subcontainer-3">With zero coding experience, artist building 180 webpages . ... days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage.</div>
         </div>
@@ -317,8 +353,8 @@ hr {
                 <hr style="width: 80%; margin-left: 0;"><p style="display:inline; text-align: right;">Feedback</p>
             </ul>
         
-            <div class="container-item-left">
-                <div class="subcontainer-1"><a href="#">https://www.websitebuilderexpert.com/ › ... </a><span class="material-icons">arrow_drop_down</span><a href="#">Traducerea acestei pagini</a></div>
+            <div class="container-item-left not-visited-links">
+                <div class="subcontainer-1"><a style="color: black;" href="#">https://www.websitebuilderexpert.com/ › ... </a><span class="material-icons">arrow_drop_down</span><a style="color: blue;" href="#">Traducerea acestei pagini</a></div>
                 <div class="subcontainer-2"><a href="#">How to Build a Website 2021 | A Step by Step Beginner's Guide</a></div>
                 <div class="subcontainer-3">16 apr. 2021 — Anyone can build a website with the right tools - and the right guide! We'll show you how to make yours in just 9 steps.</div>
             </div>
@@ -332,59 +368,59 @@ hr {
             </div>
                 <div class="goooogle-container">
                     <div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style=" color: blue; letter-spacing: 2px;">G</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle p-goooogle-G-gle" style="color: blue;">G</p></div>
                         <div class="goooogle-subcontainer-bottom"></div>
                     </div>
                     <a href="#"><div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style=" color: red;">o</p></div>
-                        <div class="goooogle-subcontainer-bottom"><p class="p-gooooogle-bottom">1</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle" style="color: red;">o</p></div>
+                        <div class="goooogle-subcontainer-bottom"><p style="color: black" class="p-gooooogle-bottom">1</p></div>
                     </div></a>
                     <a href="#"><div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style="color: orange;">o</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle" style="color: orange;">o</p></div>
                         <div class="goooogle-subcontainer-bottom"><p class="p-gooooogle-bottom">2</p></div>
                     </div></a>
                     <a href="#"><div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style="color: orange">o</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle" style="color: orange;">o</p></div>
                         <div class="goooogle-subcontainer-bottom"><p class="p-gooooogle-bottom">3</p></div>
                     </div></a>
                     <a href="#"><div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style="color: orange">o</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle" style="color: orange;">o</p></div>
                         <div class="goooogle-subcontainer-bottom"><p class="p-gooooogle-bottom">4</p></div>
                     </div></a>
                     <a href="#"><div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style="color: orange">o</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle" style="color: orange;">o</p></div>
                         <div class="goooogle-subcontainer-bottom"><p class="p-gooooogle-bottom">5</p></div>
                     </div></a>
                     <a href="#"><div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style="color: orange">o</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle" style="color: orange;">o</p></div>
                         <div class="goooogle-subcontainer-bottom"><p class="p-gooooogle-bottom">6</p></div>
                     </div></a>
                     <a href="#"><div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style="color: orange">o</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle" style="color: orange;">o</p></div>
                         <div class="goooogle-subcontainer-bottom"><p class="p-gooooogle-bottom">7</p></div>
                     </div></a>
                     <a href="#"><div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style="color: orange">o</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle" style="color: orange;">o</p></div>
                         <div class="goooogle-subcontainer-bottom"><p class="p-gooooogle-bottom">8</p></div>
                     </div></a>
                     <a href="#"><div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style="color: orange">o</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle" style="color: orange;">o</p></div>
                         <div class="goooogle-subcontainer-bottom"><p class="p-gooooogle-bottom">9</p></div>
                     </div></a>
                     <a href="#"><div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style="color: orange">o</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle" style="color: orange;">o</p></div>
                         <div class="goooogle-subcontainer-bottom"><p class="p-gooooogle-bottom">10</p></div>
                     </div></a>
                     <div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style=" color: blue; letter-spacing: 2px;">g</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle p-goooogle-G-gle" style="color: blue;">g</p></div>
                         <div class="goooogle-subcontainer-bottom"></div>
                     </div>
                     <div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style=" color: green; letter-spacing: 2px;">l</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle p-goooogle-G-gle" style="color: green;">l</p></div>
                         <div class="goooogle-subcontainer-bottom"></div>
                     </div>
                     <div class="goooogle-subcontainer">
-                        <div class="goooogle-subcontainer-top"><p style=" color: red; letter-spacing: 2px;">e</p></div>
+                        <div class="goooogle-subcontainer-top"><p class="p-top-goooogle p-goooogle-G-gle" style="color: red;">e</p></div>
                         <div class="goooogle-subcontainer-bottom"></div>
                     </div>
                     <a href="#"><div class="goooogle-subcontainer">
@@ -392,15 +428,8 @@ hr {
                         <div class="goooogle-subcontainer-bottom"><p class="p-gooooogle-bottom">Înainte</p></div>
                     </div></a>
                 </div>
-                
-                
-            
-        
         </div>
-        
-        
-        
-        
+
         <!-- Right container-->
         <div class="right">
             <ul class="ul-others-search-for">
@@ -418,16 +447,15 @@ hr {
     <footer>
         <ul class="ul-footer-1">
             <li style="float: left"><a href="#">România</a></li>
+            <li><div style="margin-top: 0px;" class="vl"></div></li>
+            <li><span class="dot"></span><strong> Cluj-Napoca</strong> - După adresa de internet - <a href="#">Utilizaţi locaţia exactă </a>- <a href="#">Aflaţi mai multe</a></li>
         </ul>
         <hr>
         <ul class="ul-footer-2">
-            <li style="float: left"><a href="#">Despre</a></li>
-            <li style="float: left"><a href="#">Publicitate</a></li>
-            <li style="float: left"><a href="#">Companii</a></li>
-            <li style="float: left"><a href="#">Cum funcţionează căutarea</a></li>
-            <li style="float: right"><a href="#">Confidenţialitate</a></li>
-            <li style="float: right"><a href="#">Termeni</a></li>
-            <li style="float: right"><a href="#">Setări</a></li>
+            <li style="float: left"><a href="#">Ajutor</a></li>
+            <li style="float: left"><a href="#">Trimiteţi feedback</a></li>
+            <li style="float: left"><a href="#">Confidenţialitate</a></li>
+            <li style="float: left"><a href="#">Termeni</a></li>
         </ul>
     </footer>
 </footer>

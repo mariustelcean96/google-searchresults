@@ -10,6 +10,8 @@
 body {
     font-family: arial,sans-serif;}
 
+a:visited {color: rgb(68, 27, 77)154, 154, 175);}
+
 
 /*Icons */
 .material-icons {
@@ -45,12 +47,14 @@ body {
     max-width: 70%;
     border-radius: 25px;
     border: 1px solid lightgrey;
-    box-shadow: 0 0 1px lightgray;
+    box-shadow: 0 0 2px lightgray;
     height: 45px;
     margin: 12px;
-    
-    
-    
+}
+
+.container-header:hover {
+
+box-shadow: 0 0 4px lightgrey;   
 }
 .ul-for-navigation-menu {
     background-color: white;
@@ -122,7 +126,8 @@ li a:visited, a:link {
 .container-item-left {
     display: flex;
     flex-direction: column;
-    margin: 20px 0;
+    margin: 10px 0;
+    padding-top: 0;
 }
 .subcontainer-1 {
     background-color: white;
@@ -138,29 +143,41 @@ li a:visited, a:link {
 }
 .right {
     grid-area: right;
-    margin: 10px auto;
+    margin: 30px auto;
+    padding: 10px 15px;
     border-radius: 5px;
     max-width: 300px;
-    max-height: 250px;
+    max-height: 160px;
     border: 1px solid grey;
 }
-.ul-others-search-for {
-    list-style-type: none;
+.others-search-for {
+    display: grid;
+    grid-template-rows: 30px 30px 30px 30px;
+    
+    
 }
+
 .others-searched-for-box {
+    margin-top: 20px;
     border: 1px solid lightgray;
-    list-style-type: none;
+    /*list-style-type: none;*/
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 40px;
 }
-.ul-others-searched-too {
-    list-style-type: none;
-}
-.ul-people-asked-too {
-    list-style-type: none;
+
+.div-people-asked-too {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 500px 30px;
+    grid-template-rows: 30px 25px 25px 25px 25px;
 }
 .similar-searches-container {
-    margin: 50px 80px;
+    margin: 25px 8px;
     max-width: 700px;
-    background-color: chartreuse;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 25px 25px 25px;
 }
 .similar-searches {
     background-color: turquoise;
@@ -174,24 +191,7 @@ li a:visited, a:link {
                             "item3 item4";
                      
 }
-.similar-searches-subcontainer-item1 {
-    grid-area: item1;
-    background-color: lightgray;
-    border-radius: 25px;
-    border: 1px solid transparent;
-}
-.similar-searches-subcontainer-item2 {
-    grid-area: item2;
-    background-color: lightgray;
-    border-radius: 25px;
-    border: 1px solid transparent;
-}
-.similar-searches-subcontainer-item3 {
-    grid-area: item3;
-    background-color: lightgray;
-    border-radius: 25px;
-    border: 1px solid transparent;
-}
+
 .li-similar-searches {
     list-style-type: none;
     border-radius: 25px; 
@@ -201,8 +201,9 @@ li a:visited, a:link {
 }
 .goooogle-container {
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     justify-content: center;
+    margin-top: 50px;
     
 }
 .goooogle-subcontainer {
@@ -235,15 +236,10 @@ line-height: 1px;
 }
 
 /* Footer */
-.ul-footer-1 {
-    
-}
-.ul-footer-2 {
-    
-}
+
 
 .ul-footer-1, .ul-footer-2 {
-    background-color:rgb(165, 165, 165);
+    background-color:#dadce0;
     overflow: hidden;
     width: 100%;
     margin: 0;
@@ -253,8 +249,10 @@ line-height: 1px;
 .ul-footer-1 li, .ul-footer-2 li {
     margin: 10px;
 }
-
-footer a:link, a:visited {
+.links a:link {
+    color: red;
+}
+footer a:link, footer a:visited {
     padding: 5px;
     margin: 5px 0px;
     text-decoration: none;
@@ -267,7 +265,7 @@ footer a:hover, a:active {
 hr {
     padding: 0px;
     margin: 0px;
-    opacity: 0.8;
+    opacity: 0.3;
     width: 100%;
         } 
 .dot {
@@ -288,11 +286,11 @@ hr {
     <ul class="ul-for-navigation-bar">
         <li><img style="width: 100px; height: auto; margin-right: 20px; margin-top: 13px; margin-left: 8px;"alt="Google's modern logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></li>
         <div class="container-header">
-            <li><input id="search-box" name="search-box" type="text"></input></li>
-            <li><span style="font-size: 19px;" class="material-icons">close</span></li>
-            <li><div class="vl"></div></li>
-            <li><span style="font-size: 19px;" class="material-icons">keyboard</span></li>
-            <li><span style="font-size: 19px; color:blue;" class="material-icons">search</span></li>
+            <li><input id="search-box" name="search-box" type="text" placeholder="build this webpage"></input></li>
+            <li><a href="#"><span style="font-size: 19px;" class="material-icons">close</span></a></li>
+            <li><a href="#"><div class="vl"></div></a></li>
+            <li><a href="#"><span style="font-size: 19px;" class="material-icons">keyboard</span></a></li>
+            <li><a href="#"><span style="font-size: 19px; color:blue;" class="material-icons">search</span></a></li>
         </div>
         <!--For some reason yet unknown to me, the order is reversed. Perhaps something with the float property? >.< -->
         <li style="float:right"><img class="header-profile-pic" title="Cont Google Telcean Marius marius.telcean96@gmail.com" alt="Marius Telcean's profile picture, taken during a festival that took place in Cluj-Napoca's Central Park." src="profile-Pic.png"></li>
@@ -313,58 +311,60 @@ hr {
     <div class="container">
         <!-- Left container-->
         <div class="left">
-            <p>Aproximativ 114.000.000 rezultate (0,59 secunde)</p> 
+            <p style="font-size: 14px; color:lightslategrey; margin-bottom: 0;">Aproximativ 114.000.000 rezultate (0,59 secunde)</p> 
         <div class="container-item-left not-visited-links">
-            <a style="color: black;" href="https://www.thebest10websitebuilders.com/"><div class="subcontainer-1"><strong>Anunț · </strong>https://www.thebest10websitebuilders.com/<span class="material-icons">arrow_drop_down</span></div></a>
+            <a style="color: black; padding-top: 0;" href="https://www.thebest10websitebuilders.com/"><div class="subcontainer-1"><strong>Anunț · </strong>https://www.thebest10websitebuilders.com/<span class="material-icons">arrow_drop_down</span></div></a>
             <div class="subcontainer-2"><a href="#">Website Builders (Recommended) - Compare Top Website...</a></div>
             <div class="subcontainer-3">It's Easy and Free. Compare the Best <strong>Website</strong> Builders. The #1 Website <strong>Website</strong>'s Reviews!</div>
             <div class="subcontainer-4"><a href="#">Top Site Builders Reviews</a> · <a href="#">Online Store Builders</a>‎ · ‎<a href="#">The #1 Website Builder</a></div>
         </div>
         <div class="container-item-left not-visited-links">
-            <a style="color: black;" href="www.best10ecommercesitebuilders.com/"><div class="subcontainer-1"><strong>Anunț · </strong>https://www.best10ecommercesitebuilders.com/<span class="material-icons">arrow_drop_down</span></div></a>
+            <a style="color: black; padding-top: 0;" href="www.best10ecommercesitebuilders.com/"><div class="subcontainer-1"><strong>Anunț · </strong>https://www.best10ecommercesitebuilders.com/<span class="material-icons">arrow_drop_down</span></div></a>
             <div class="subcontainer-2"><a href="#">Website Builders (Recommended) - Ultimate Website Builder...</a></div>
             <div class="subcontainer-3">It's Easy and Free. Compare the Best <strong>Website</strong> Builders. The #1 Website <strong>Website</strong>'s Reviews! It's Easy. Compare the Best <strong>Website</strong> Builders and Choose Yours. Make a Free <strong>Website</strong>...</div>
             <div class="subcontainer-4"><a href="#">#1 Website Builder</a> · <a href="#">‎Business Website</a>‎ · ‎<a href="#">‎New Reviews Released</a> · <a href="#">Feature Comparison</a></div>
         </div>
         <div class="others-searched-for-box">
-            <ul class="ul-others-searched-too">
-            <li style="float:left;">Alţii au căutat şi</li>
-            <li style="float:right;"><span class="material-icons">close</span></li><br>
-            <li style="float:right;"><a href="#">How to create a website for free</a></li>
-            <li style="float:none; "><a href="#">How to build a website</a></li>
-            <li style="float:right;"><a href="#">How to create a website HTML</a></li>
-            <li style="float:none;"><a href="#">How to build a website from scratch</a></li>
-            <li style="float:none;"><a href="#">How to make a professional website</a></li>
-            </ul>
+<div style="margin: 10px;">Alţii au căutat şi</div>
+<div style=" justify-self: right; margin-top: -6px;"><span class="material-icons">close</span></div>
+<div style=" margin: 5px;"><a href="#">How to create a website for free</a></div>
+<div style=" margin: 5px;"><a href="#">How to build a website</a></div>
+<div style=" margin: 5px;"><a href="#">How to create a website HTML</a></div>
+<div style=" margin: 5px;"><a href="#">How to build a website from scratch</a></div>
+<div style=" margin: 5px;"><a href="#">How to make a professional website</a></div>
         </div>
 
         <div class="container-item-left not-visited-links">
-            <div class="subcontainer-1"><a style="color: black;" href="#">https://christine-27.github.io/ › ... </a><span class="material-icons">arrow_drop_down</span><a style="color: blue;" href="#">Traducerea acestei pagini</a></div>
+            <div class="subcontainer-1"><a style="color: black; padding-top: 0;" href="#">https://christine-27.github.io/ › ... </a><span class="material-icons">arrow_drop_down</span><a style="color: blue;" href="#">Traducerea acestei pagini</a></div>
             <div class="subcontainer-2"><a href="#">build this webpage - GitHub Pages</a></div>
             <div class="subcontainer-3">With zero coding experience, artist building 180 webpages . ... days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage.</div>
         </div>
-        
-            <ul class="ul-people-asked-too">
-                <li style="border-bottom: 1px solid lightgrey; float:none;">Oamenii au mai întrebat şi </li>
-                <li style="border-bottom: 1px solid lightgrey;float:none;">How can I create my own webpage? <span style="float:right" class="material-icons">expand_more</span></li>
-                <li style="border-bottom: 1px solid lightgrey;float:none;">How hard is it to build your own website? <span style="float:right" class="material-icons">expand_more</span></li>
-                <li style="border-bottom: 1px solid lightgrey;float:none;">Where can I build website? <span style="float:right" class="material-icons">expand_more</span></li>
-                <li style="float:none;">How do I make 30 minutes website? <span style="float:right" class="material-icons">expand_more</span></li>
-                <hr style="width: 80%; margin-left: 0;"><p style="display:inline; text-align: right;">Feedback</p>
-            </ul>
-        
+        <div class="div-people-asked-too">
+            <div>Oamenii au mai întrebat şi</div>
+            <div></div>
+            <a style="color: black;" href="#"><div style="border-bottom: 1px solid lightgray;">How can I create my own webpage?</div></a>
+            <div style="justify-self: center; align-self: bottom;"><span class="material-icons">expand_more</span></div>
+            <a style="color: black;" href="#"><div style="border-bottom: 1px solid lightgray; margin: 0px 0;">How hard is it to build your own website?</div></a>
+            <div style="justify-self: center; align-self: bottom;"><span class="material-icons">expand_more</span></div>
+            <a style="color: black;" href="#"><div style="border-bottom: 1px solid lightgray; margin:0; padding: 0;">Where can I build website?</div></a>
+            <div style="justify-self: center; align-self: bottom;"><span class="material-icons">expand_more</span></div>
+            <a style="color: black;" href="#"><div ">How do I make 30 minutes website?</div></a>
+            <div style="justify-self: center; align-self: bottom;"><span class="material-icons">expand_more</span></div>
+            <div style="margin-top: 20px; margin-left: 4px;"><hr style="width: 480px; border: 1px solid lightgrey;"></div><div style="align-self: bottom; margin-top: 10px;">Feedback</div>
+        </div>
             <div class="container-item-left not-visited-links">
-                <div class="subcontainer-1"><a style="color: black;" href="#">https://www.websitebuilderexpert.com/ › ... </a><span class="material-icons">arrow_drop_down</span><a style="color: blue;" href="#">Traducerea acestei pagini</a></div>
+                <div class="subcontainer-1"><a style="color: black; padding-top: 0;" href="#">https://www.websitebuilderexpert.com/ › ... </a><span class="material-icons">arrow_drop_down</span><a style="color: blue;" href="#">Traducerea acestei pagini</a></div>
                 <div class="subcontainer-2"><a href="#">How to Build a Website 2021 | A Step by Step Beginner's Guide</a></div>
                 <div class="subcontainer-3">16 apr. 2021 — Anyone can build a website with the right tools - and the right guide! We'll show you how to make yours in just 9 steps.</div>
             </div>
             <div class="similar-searches-container">
                 <div class="similar-searches-title">Căutări similare</div>
-                <div class="similar-searches-subcontainer">
-                    <div class="similar-searches-subcontainer-item1"><span class="material-icons right-margin-icons">search</span>How to build a website from scratch</div>
-                    <div class="similar-searches-subcontainer-item2"><span class="material-icons right-margin-icons">search</span>How to create a website for free</div>
-                    <div class="similar-searches-subcontainer-item3"><span class="material-icons right-margin-icons">search</span>How to create a website for free</div>
-                </div>
+                <div></div>
+                <div style="padding: 5px; background-color: lightgray; border-radius: 25px; height: 38px; justify-self:right; width: 350px;"><span class="material-icons right-margin-icons">search</span>How to build <strong>a website from scratch</strong></div>
+                <div></div>
+                <div style="padding: 5px; margin-top: 30px; background-color: lightgray; border-radius: 25px; height: 38px; justify-self:right; width: 350px;"><span class="material-icons right-margin-icons">search</span><strong>How to</strong> create a website for free</div>
+                <div></div>
+                <div style="padding: 5px; margin-top: 60px; background-color: lightgray; border-radius: 25px; height: 38px; justify-self:right; width: 350px;"><span class="material-icons right-margin-icons">search</span><strong>How to create a website for free</strong></div>
             </div>
                 <div class="goooogle-container">
                     <div class="goooogle-subcontainer">
@@ -432,13 +432,13 @@ hr {
 
         <!-- Right container-->
         <div class="right">
-            <ul class="ul-others-search-for">
-                <li style="float: none;">Alţii caută şi</li>
-                <li style="float:none"><span class="material-icons">search</span>How to build a website</li>
-                <li style="float:none"><span class="material-icons">search</span>How to build a website from scratch</li>
-                <li style="float:none"><span class="material-icons">search</span>How to create a website HTML</li>
-                <li style="float:none"><span class="material-icons">search</span>How to create a website for free</li>
-            </ul>
+            <div class="others-search-for">
+                <div>Alţii caută şi</div>
+                <div><span class="material-icons">search</span>How to build a website</div>
+                <div><span class="material-icons">search</span>How to build a website from scratch</div>
+                <div><span class="material-icons">search</span>How to create a website HTML</div>
+                <div><span class="material-icons">search</span>How to create a website for free</div>
+            </div>
         </div>
         
     </div>
